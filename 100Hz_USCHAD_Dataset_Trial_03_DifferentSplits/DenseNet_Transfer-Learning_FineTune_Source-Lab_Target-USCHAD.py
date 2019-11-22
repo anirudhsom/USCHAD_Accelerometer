@@ -65,6 +65,8 @@ for free_liv_train_size in free_liv_train_size_set:
             pretrained_model_path = code_path + '/DenseNet-Supervised_TrainRandom_TestRandom_Split-Case-' + str(sample_cases_split) + '_WindowSize-' + str(window_size) + '/TrainSize-90_TestSize-10/Seed-'+str(1)+'/Trial-1_Model-250-epochs.h5'
         elif sample_cases_split==3:
             pretrained_model_path = code_path + '/DenseNet-Supervised_TrainRandom_TestRandom_Split-Case-' + str(sample_cases_split) + '_WindowSize-' + str(window_size) + '/TrainSize-90_TestSize-10/Seed-'+str(1)+'/Trial-2_Model-250-epochs.h5'
+        elif sample_cases_split==4:
+            pretrained_model_path = code_path + '/DenseNet-Supervised_TrainRandom_TestRandom_Split-Case-' + str(sample_cases_split) + '_WindowSize-' + str(window_size) + '/TrainSize-90_TestSize-10/Seed-'+str(1)+'/Trial-3_Model-250-epochs.h5'
         
         for trial in trial_value_set:
             if not os.path.exists(classifier_models_path + '/Seed-'+str(seed_value) + '/Trial-' + str(trial) + '_History.pckl'):
